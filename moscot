@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K리그 마스코트 소개</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+    }
+
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 15px;
+    }
+
+    .team-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .mascot-name {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>K리그 구단 마스코트 소개</h1>
+    <p>각 구단의 귀여운 마스코트를 만나보세요!</p>
+  </header>
+
+  <main class="container">
+    <!-- 예시 카드 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/ko/thumb/d/d9/Suwon_Bluewings.png/220px-Suwon_Bluewings.png" alt="수원 삼성 블루윙즈">
+      <div class="card-content">
+        <div class="team-name">수원 삼성 블루윙즈</div>
+        <div class="mascot-name">아길레온</div>
+        <div class="description">수원의 푸른 날개를 상징하는 사자 마스코트, 열정적인 응원으로 팬들에게 사랑받습니다.</div>
+      </div>
+    </div>
+
+    <!-- 다른 구단들도 아래에 같은 형식으로 추가 -->
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/ko/thumb/5/57/Ulsan_Hyundai_FC.png/220px-Ulsan_Hyundai_FC.png" alt="울산 현대">
+      <div class="card-content">
+        <div class="team-name">울산 현대</div>
+        <div class="mascot-name">호랑이 "블루드래곤"</div>
+        <div class="description">울산의 강인함과 전통을 상징하는 호랑이, 팬들과 함께 호흡하며 경기장을 뜨겁게 만듭니다.</div>
+      </div>
+    </div>
+
+    <!-- 더 많은 카드들을 여기에 추가하세요 -->
+  </main>
+</body>
+</html>
